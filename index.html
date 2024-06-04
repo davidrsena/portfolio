@@ -1,0 +1,293 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="David Sena's Portfolio">
+	<meta name="author" content="David's Portfolio">
+	<title>David Portfolio</title>
+
+	<script src="index.js"></script>
+
+	<!-- Bootstrap core CSS -->
+	<link href="styles.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="imgs/logo.png" alt="Brand Logo" style="height: 30px;">
+			</a>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid splash pt-5">
+		<div>
+			<p id="text">Hi there! I'm David, your Web Developer. <br> Welcome to my portfolio.</p>
+
+
+			<p id="shadow">
+				<span id="glow">Hi there! I'm David, your Web Developer. <br> Welcome to my </span><span
+					id="blink">portfolio.</span>
+			</p>
+
+
+		</div>
+		<div class="container">
+			<span class="continue"><a href="#about"><i class="fa fa-angle-down"></i></a></span>
+		</div>
+	</div>
+	<!-- About Section -->
+	<section class="success" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>About</h2>
+					<hr class="hr-green">
+
+					<div class="col-lg-6">
+						<p class="content-text" style="text-align:justify;">I'm David, a soon-to-be graduate from
+							Aveiro, Portugal. <br>With a passion for learning new skills and tackling exciting
+							challenges,
+							I'm eager to embark on my next adventure. I'm currently seeking opportunities in Web
+							Development and UI/UX.
+						</p>
+						<p class="content-text" style="text-align:justify;">
+							My hobbies include: Playing drums, cycling, swimming, trails in nature, music, cinema, my
+							dog,
+							science.
+						</p>
+						<h3 class="content-text" style="text-align:justify;">
+							Let's create something amazing together!
+						</h3>
+					</div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-4">
+						<p class="content-text" style="text-align:justify;">
+							<img src="imgs/perfil.png">
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="text-center row">
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<div class="skills-container container" id="skills">
+		<div class="row">
+			<h2 class="text-center">Skills</h2>
+			<hr class="hr-green">
+			<div class="col-md-6">
+				<ul id="skill">
+					<li><span class="bar figma"></span>
+						<h3>Figma</h3>
+					</li>
+					<li><span class="bar html-css"></span>
+						<h3>html // css</h3>
+					</li>
+					<li><span class="bar javascript"></span>
+						<h3>JavaScript</h3>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<ul id="skill">
+					<li><span class="bar php"></span>
+						<h3>PHP</h3>
+					</li>
+					<li><span class="bar sql"></span>
+						<h3>SQL</h3>
+					</li>
+					<li><span class="bar react"></span>
+						<h3>React</h3>
+					</li>
+				</ul>
+			</div>
+			<div class="text-center">
+				<span class="skill-badge">Communication</span>
+				<span class="skill-badge">Empathy</span>
+				<span class="skill-badge">Teamwork</span>
+				<span class="skill-badge">Adobe</span>
+				<span class="skill-badge">Reliability</span>
+				<span class="skill-badge">Creativity</span>
+				<span class="skill-badge">Time Managing</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portfolio -->
+	<div class="success container-fluid portfolio-container-holder content-section" id="portfolio">
+		<div class="portfolio-container container">
+			<h2 class="text-center">My Portfolio</h2>
+			<hr class="hr-green">
+			<div class="row">
+				<div class="col-md-6 item">
+					<div class="portCard">
+						<div class="div-card-cover" style="background-image: url('imgs/skye.png');"></div>
+						<h1>Skye</h1>
+						<p>A project that integrates technology and mental health. Given the increasing global concern
+							about mental health, particularly anxiety, Skye addresses this issue using principles from
+							Cognitive Behavioral Therapy (CBT).</p>
+						<span class="badge">React</span>
+						<span class="badge">Firebase</span>
+						<span class="badge">JavaScript</span>
+						<span class="badge">CSS</span>
+						<span class="badge">Bootstrap</span>
+					</div>
+				</div>
+
+				<div class="col-md-6 item">
+					<div class="portCard">
+						<div class="div-card-cover" style="background-image: url('imgs/youniverse.png');"></div>
+						<h1>Youniverse</h1>
+						<p>Final project for Database and Server-side Technologies. This app was meant for kids so they
+							could learn more about the Universe. Users should be able to mix primary element and get
+							components to build their Universes.</p>
+						<span class="badge">PHP</span>
+						<span class="badge">SQL</span>
+						<span class="badge">CSS</span>
+						<span class="badge">JavaScript</span>
+						<span class="badge">Bootstrap</span>
+					</div>
+				</div>
+
+				<div class="col-md-6 item">
+					<div class="portCard">
+						<div class="div-card-cover" style="background-image: url('imgs/indianmovies.png');"></div>
+						<h1>INDIAN MOVIES</h1>
+						<p>Academic exercise in which students were tasked with creating a database (MySQL) and
+							developing a website that retrieves and displays information from that database.</p>
+						<span class="badge">PHP</span>
+						<span class="badge">SQL</span>
+						<span class="badge">JavaScript</span>
+						<span class="badge">Bootstrap</span>
+					</div>
+				</div>
+
+				<div class="col-md-6 item">
+					<div class="portCard">
+						<div class="div-card-cover" style="background-image: url('imgs/rrrecicla.png');"></div>
+						<h1>RRRECICLA</h1>
+						<p>An academic project focused on teaching kids the principles and importance of recycling using
+							HTML and CSS. JavaScript was utilized to add interactivity and create a mini-game.</p>
+						<span class="badge">HTML</span>
+						<span class="badge">CSS</span>
+						<span class="badge">JavaScript</span>
+
+					</div>
+				</div>
+
+				<div class="col-md-6 item">
+					<div class="portCard">
+						<div class="div-card-cover" style="background-image: url('imgs/pickles.png');"></div>
+						<h1>MR. PICKLES</h1>
+						<p>Exercise about Adult Swim's Mr. Pickles. It displays some scenes from the series and has got
+							a shop tab with sob products from the series.</p>
+						<span class="badge">HTML</span>
+						<span class="badge">CSS</span>
+						<span class="badge">Bootstrap</span>
+						<span class="badge">JQuery</span>
+					</div>
+				</div>
+
+				<div class="col-md-6 item">
+					<div class="portCard">
+						<div class="div-card-cover" style="background-image: url('imgs/kiiiino.png');"></div>
+						<h1>KIIIINO</h1>
+						<p>Exercise about alternative cinema where people could navigate between a list of films,
+							critics or news on cinema.</p>
+						<span class="badge">HTML</span>
+						<span class="badge">CSS</span>
+						<span class="badge">Bootstrap</span>
+						<span class="badge">JQuery</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Contact form -->
+	<div class="container-fluid contact-me-container content-section" id="contact">
+		<div class="container">
+			<h1 class="intro-text text-center">Contact</h1>
+			<hr class="hr-green">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-user"></i></div>
+							<input type="text" class="form-control" id="name" placeholder="Name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-at"></i></div>
+							<input type="text" class="form-control" id="email" placeholder="Email ID">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-phone"></i></div>
+							<input type="text" class="form-control" id="phone" placeholder="Phone Number">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 p-0">
+					<textarea class="form-control" rows="5" placeholder="Please reach out through my Linkedin account."></textarea>
+				</div>
+			</div>
+
+			<div class="text-center">
+				<button class="btn btn-default submit-button btn-lg"><i class="fa fa-paper-plane"></i> Send</button>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="container footer-container">
+			<div class="row footer-row">
+
+				<div class="col-xs-12 col-md-12 col-sm-12 social-section">
+					<div class="text-center">
+						<h4 class="text-center">Find me here</h4>
+						<div class="text-center social-buttons">
+
+							<a href="https://www.linkedin.com/in/david-sena/" target=”_blank”
+								class="btn btn-default btn-lg social-button link-linkedin">
+								<i class="fa fa-linkedin"></i>
+							</a>
+
+						</div>
+					</div>
+				</div>
+	</footer>
+
+
+	<!-- Bootstrap core JavaScript -->
+
+</body>
+
+</html>

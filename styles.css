@@ -1,0 +1,536 @@
+@import "compass/css3";
+
+:root {
+    --mintgreen: #14FFEC;
+    --mintgreen2: #0D7377;
+    --darkgrey: #323232;
+    --black: #212121;
+}
+
+body{
+  background-color: var(--black) !important;
+}
+  
+
+html{
+    scroll-behavior: smooth;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  
+  ul.navbar-nav { 
+    float:right;
+    text-align:center;
+  }
+
+  ul.navbar-nav li 
+  {
+    padding: 0 10px;
+  }
+  @media only screen and (max-width:767px)
+  { ul.navbar-nav { float:none; } }
+  
+  .navbar-nav li a
+  {
+    color:var(--mintgreen)!important;
+    font-size:1.2em;
+    font-family: Century gothic,sans-serif;
+    font-weight:200;
+    transition: 750ms ease;
+  }
+  .navbar-nav li a:hover
+  {
+    color:var(--black)!important;
+    background-color:var(--mintgreen)!important;
+  }
+
+  .navbar-inverse
+  {
+    border:none!important;
+  }
+  
+  .splash {
+    padding-top: 10%;
+    height: 95vh;
+    background-size: cover;
+    background-color: var(--black);
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    display: block;
+    max-height:250px;
+    max-width: 250px;
+    margin: 0 auto 1em;
+    width: 100%;
+    opacity: 0.85;
+  }
+  
+  .splash h1 {
+    font-size: 40px;
+    margin-bottom: .15em;
+    text-align: center;
+  }
+  
+  .splash .lead, .splash .continue {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+  }
+  h1.intro-text
+  {
+    margin:0;
+    color:#fff;
+  }
+  
+  @keyframes blink
+    {
+              0% { opacity:1; }
+              50% { opacity:0; }
+              100% { opacity:1; }
+    }
+          @-webkit-keyframes blink
+          {
+              0% { opacity:1; }
+              50% { opacity:0; }
+              100% { opacity:1; }
+          }
+          @-moz-keyframes blink
+          {
+              0% { opacity:1; }
+              50% { opacity:0; }
+              100% { opacity:1; }
+          }
+          @-ms-keyframes blink
+          {
+              0% { opacity:1; }
+              50% { opacity:0; }
+              100% { opacity:1; }
+          }
+          @-o-keyframes blink
+          {
+              0% { opacity:1; }
+              50% { opacity:0; }
+              100% { opacity:1; }
+          }
+  /* code for blinking text */
+
+  
+  
+  
+  .splash .continue a {
+    margin-top: 30vh;
+    border: 2px solid var(--mintgreen);
+    border-radius: 100%;
+    color: var(--mintgreen);
+    display: inline-block;
+    text-decoration: none;
+    width: 60px;
+    height:60px;
+    font-size:60px;
+    position: absolute;
+    top: 50%;
+  }
+  .splash .continue a:hover {
+    background-color: var(--mintgreen2);
+  }
+  #about,#portfolio,#contact
+  {
+    padding-top:4em!important;
+  }
+
+  h2 {
+      margin: 0;
+      font-size: 2.5em;
+      color: white !important;
+  }
+
+  section.success {
+      color: #fff;
+      background: var(--black);
+    padding: 2%;
+  }
+  
+  section.success a
+  {
+    color:black;
+    transition: 0.4s ease;
+  }
+  section.success a:hover {
+      outline: 0;
+      color: #fff;
+    border: 2px solid #fff;
+  }
+  .contact-button
+  {
+    padding-bottom:2%;
+  }
+
+  .hr-green{
+    border-color: var(--mintgreen);
+  }
+  
+ 
+  p.content-text {
+    padding-top: 4%; 
+    font-size: 20px; 
+
+  }
+  
+  /* PORTFOLIO */
+  .portfolio-card{
+      background: var(--black);
+  }
+  
+  
+  .portfolio-container-holder{
+      background:var(--black);
+      padding-bottom: 20px;
+      padding-top: 50px;
+  }
+  
+  
+  .portfolio-card-holder{
+      padding: 20px;
+      margin-bottom: 5px;
+  }
+  
+  .portfolio-img{
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+  }
+  
+  .portfolio-img-desc{
+      position: relative;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      padding: 5px;
+  }
+  
+  /* Contact */
+  .contact-me-container{
+      padding:3%;
+  background: var(--black);
+  }
+
+  .fa-user,.fa-at,.fa-phone
+  {
+    color:var(--mintgreen2);
+  }
+
+  .submit-button{
+    color: var(--mintgreen2);
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  /* ========================
+  Footer
+  ======================== */
+  
+  footer {
+    background-color: var(--darkgrey);
+    color:  var(--mintgreen);
+    font-size: 2em;
+    text-align: center;
+    padding:3%;
+  }
+  a.tel,a.tel:hover
+  {
+    text-decoration:none;
+    color:#fff;
+  }
+  a.social-button {
+      background: #fff;
+      font-size: 20px;
+      border-radius: 50%;
+      margin: 5px;
+  }
+  .address-container{
+      display: inline-block;
+      margin: 0 auto;
+  }
+  a.link-linkedin
+  {
+    transition:0.4s ease;
+  }
+ 
+  a.link-linkedin
+  {
+    color:#007bb6;
+  }
+  
+  a.link-linkedin:hover{
+      background-color: #007bb6;
+      color: #fff;
+  }
+ 
+  .btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: transparent!important;
+  }
+ 
+  #text,
+    #shadow {
+        position: absolute;
+        margin: 0;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5em;
+        font-family: Century gothic,sans-serif;
+    font-weight:200;
+        color: var(--mintgreen);
+    }
+
+    #text {
+        color: #333
+    }
+
+    #shadow {
+        text-shadow: 0 0 10px var(--mintgreen), 0 0 10px var(--mintgreen), 0 0 10px var(--mintgreen2), 0 0 70px var(--black), 0 0 50px var(--darkgrey), 0 0 20px var(--mintgreen), 0 0 10px var(--mintgreen2);
+    }
+
+   #glow {
+        animation: neon1 linear infinite 10s;
+        will-change: opacity;
+    }
+
+    #blink {
+        animation: blink linear infinite 1.5s;
+    }
+
+
+    @keyframes neon1 {
+        20% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0.6;
+        }
+    }
+
+
+    @keyframes blink {
+        70% {
+            opacity: 1;
+        }
+        79% {
+            opacity: 0;
+        }
+        81% {
+            opacity: 1;
+        }
+        82% {
+            opacity: 0;
+        }
+        83% {
+            opacity: 1;
+        }
+        92% {
+            opacity: 0;
+        }
+        92.5% {
+            opacity: 1;
+        }
+    }
+
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.item {
+  height: 500px;
+  overflow: hidden;
+  float: left;
+  color: var(--mintgreen2);
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 40px !important;
+}
+
+.portCard{
+  background-color: var(--darkgrey);
+  padding-bottom: 16px;
+}
+
+.item:hover {
+  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.div-card-cover{
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+
+
+.badge{
+  background-color: var(--mintgreen2) !important;
+  font-weight: 100 !important;
+  color: white;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  margin: 2%;
+  box-shadow: var(--darkgrey) 0px 0px 5px;
+}
+
+.item h1{
+  font-size: 24px;
+  color: var(--mintgreen);
+  text-align: left;
+  margin-left: 8%;
+}
+
+.item p{
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  margin-left: 8%;
+}
+
+.skills-container{
+  background-color: var(--black);
+}
+
+
+
+#skill { 
+  list-style: none;
+  font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  width: 296px;
+  margin: 50px auto 0;
+  position: relative;
+  line-height: 2em;
+  padding: 30px 0;
+}
+
+#skill li { 
+  margin-bottom:50px; 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--darkgrey)), to(var(--darkgrey)));
+  background-image: -webkit-linear-gradient(top, var(--darkgrey), var(--darkgrey)); 
+  height:20px; 
+  border-radius:10px; 
+  -moz-box-shadow: 0 1px 0px var(--darkgrey) inset, 0 1px 0 var(--darkgrey);   
+  -webkit-box-shadow: 0 1px 0px var(--darkgrey) inset, 0 1px 0 var(--darkgrey);  
+  box-shadow: 0 1px 0px var(--darkgrey) inset, 0 1px 0 var(--black);   
+}
+
+#skill li h3 { 
+  color: var(--mintgreen2);
+  position:relative; 
+  top:-30px;
+  margin-bottom: 50px;
+}
+
+.bar { 
+  height:18px; 
+  margin:1px 2px;  
+  position:absolute;
+  border-radius:10px; 
+}
+
+.figma {
+  width: 75%; 
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: var(--mintgreen);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen)), to(var(--mintgreen)));
+  background-image: -webkit-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -moz-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -ms-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -o-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: linear-gradient(top, var(--mintgreen), var(--mintgreen));
+}
+
+.html-css {
+  width: 95%; 
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: var(--mintgreen2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen2)), to(var(--mintgreen2)));
+  background-image: -webkit-linear-gradient(top, var(--mintgreen2), var(--mintgreen));
+  background-image: -moz-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: -ms-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: -o-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+}
+
+
+.javascript {
+  width: 85%; 
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: var(--mintgreen);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen)), to(var(--mintgreen)));
+  background-image: -webkit-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -moz-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -ms-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -o-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: linear-gradient(top, var(--mintgreen), var(--mintgreen));
+}
+
+.php {
+  width: 90%; 
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: var(--mintgreen2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen2)), to(var(--mintgreen2)));
+  background-image: -webkit-linear-gradient(top, var(--mintgreen2), var(--mintgreen));
+  background-image: -moz-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: -ms-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: -o-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+}
+
+.sql {
+  width: 75%; 
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: var(--mintgreen);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen)), to(var(--mintgreen)));
+  background-image: -webkit-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -moz-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -ms-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: -o-linear-gradient(top, var(--mintgreen), var(--mintgreen));
+  background-image: linear-gradient(top, var(--mintgreen), var(--mintgreen));
+}
+
+.react{
+  width: 90%; 
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: var(--mintgreen2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen2)), to(var(--mintgreen2)));
+  background-image: -webkit-linear-gradient(top, var(--mintgreen2), var(--mintgreen));
+  background-image: -moz-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: -ms-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: -o-linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+  background-image: linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
+}
+
+@-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:100%;}  }
+@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+@-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:100%;}  }
+@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+.skill-badge{
+  background-color: var(--mintgreen2) !important;
+  font-weight: 100 !important;
+  color: white;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  margin: 2%;
+  box-shadow: var(--darkgrey) 0px 0px 5px;
+}

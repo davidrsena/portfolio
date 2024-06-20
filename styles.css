@@ -31,6 +31,12 @@ html{
   }
   @media only screen and (max-width:767px)
   { ul.navbar-nav { float:none; } }
+
+  @media only screen and (max-width:1740px)
+  {  .splash p {
+    font-size: 40px !important;
+    margin-bottom: .15em;
+  } }
   
   .navbar-nav li a
   {
@@ -74,11 +80,11 @@ html{
     text-align: center;
   }
   
-  .splash .lead, .splash .continue {
+  .splash .continue {
     display: block;
     text-align: center;
-    font-size: 30px;
   }
+
   h1.intro-text
   {
     margin:0;
@@ -280,7 +286,7 @@ html{
     #shadow {
         position: absolute;
         margin: 0;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 5em;
@@ -344,7 +350,7 @@ html{
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .item {
-  height: 500px;
+  height: 750px;
   overflow: hidden;
   float: left;
   color: var(--mintgreen2);
@@ -355,21 +361,29 @@ html{
 }
 
 .portCard{
+  text-align: center;
   background-color: var(--darkgrey);
   padding-bottom: 16px;
 }
 
-.item:hover {
-  filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+.portCard:hover {
+  box-shadow: 0 1px 1px 0 var(--mintgreen2), 0 2px 2px 0 var(--mintgreen2);
+  transform: scale(1.1);
 }
 
 .div-card-cover{
   width: 100%;
-  height: 250px;
+  height: 450px;
   background-size: cover;
+
 }
 
+.div-badge{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
 .badge{
   background-color: var(--mintgreen2) !important;
@@ -393,6 +407,7 @@ html{
   color: white;
   text-align: left;
   margin-left: 8%;
+  margin-right: 8%;
 }
 
 .skills-container{
@@ -438,8 +453,8 @@ html{
 
 .figma {
   width: 75%; 
-  -moz-animation: graphic-design 2s ease-out;
-  -webkit-animation: graphic-design 2s ease-out;
+  -moz-animation: figma 2s ease-out;
+  -webkit-animation: figma 2s ease-out;
   background-color: var(--mintgreen);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen)), to(var(--mintgreen)));
   background-image: -webkit-linear-gradient(top, var(--mintgreen), var(--mintgreen));
@@ -451,8 +466,8 @@ html{
 
 .html-css {
   width: 95%; 
-  -moz-animation: graphic-design 2s ease-out;
-  -webkit-animation: graphic-design 2s ease-out;
+  -moz-animation: html-css 2s ease-out;
+  -webkit-animation: html-css 2s ease-out;
   background-color: var(--mintgreen2);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen2)), to(var(--mintgreen2)));
   background-image: -webkit-linear-gradient(top, var(--mintgreen2), var(--mintgreen));
@@ -465,8 +480,8 @@ html{
 
 .javascript {
   width: 85%; 
-  -moz-animation: graphic-design 2s ease-out;
-  -webkit-animation: graphic-design 2s ease-out;
+  -moz-animation: javascript 2s ease-out;
+  -webkit-animation: javascript 2s ease-out;
   background-color: var(--mintgreen);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen)), to(var(--mintgreen)));
   background-image: -webkit-linear-gradient(top, var(--mintgreen), var(--mintgreen));
@@ -478,8 +493,8 @@ html{
 
 .php {
   width: 90%; 
-  -moz-animation: graphic-design 2s ease-out;
-  -webkit-animation: graphic-design 2s ease-out;
+  -moz-animation: php 2s ease-out;
+  -webkit-animation: php 2s ease-out;
   background-color: var(--mintgreen2);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen2)), to(var(--mintgreen2)));
   background-image: -webkit-linear-gradient(top, var(--mintgreen2), var(--mintgreen));
@@ -491,8 +506,8 @@ html{
 
 .sql {
   width: 75%; 
-  -moz-animation: graphic-design 2s ease-out;
-  -webkit-animation: graphic-design 2s ease-out;
+  -moz-animation: sql 2s ease-out;
+  -webkit-animation: sql 2s ease-out;
   background-color: var(--mintgreen);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen)), to(var(--mintgreen)));
   background-image: -webkit-linear-gradient(top, var(--mintgreen), var(--mintgreen));
@@ -504,8 +519,8 @@ html{
 
 .react{
   width: 90%; 
-  -moz-animation: graphic-design 2s ease-out;
-  -webkit-animation: graphic-design 2s ease-out;
+  -moz-animation: react 2s ease-out;
+  -webkit-animation: react 2s ease-out;
   background-color: var(--mintgreen2);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mintgreen2)), to(var(--mintgreen2)));
   background-image: -webkit-linear-gradient(top, var(--mintgreen2), var(--mintgreen));
@@ -515,15 +530,20 @@ html{
   background-image: linear-gradient(top, var(--mintgreen2), var(--mintgreen2));
 }
 
-@-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:100%;}  }
-@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
-@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes figma {0%  { width:0px;} 100%{ width:75%;}  }
+@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:95%;}  }
+@-moz-keyframes javascript      { 0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes php   { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes sql   { 0%  { width:0px;} 100%{ width:75%;}  }
+@-moz-keyframes react   { 0%  { width:0px;} 100%{ width:90%;}  }
 
-@-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:100%;}  }
-@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
-@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes figma       { 0%  { width:0px;} 100%{ width:75%;}  }
+@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:95%;}  }
+@-webkit-keyframes javascript     { 0%  { width:0px;} 100%{ width:85%;}  }
+@-webkit-keyframes php   { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes sql   { 0%  { width:0px;} 100%{ width:75%;}  }
+@-webkit-keyframes react   { 0%  { width:0px;} 100%{ width:90%;}  }
+
 
 .skill-badge{
   background-color: var(--mintgreen2) !important;
@@ -533,4 +553,30 @@ html{
   border-radius: 20px;
   margin: 2%;
   box-shadow: var(--darkgrey) 0px 0px 5px;
+  white-space: nowrap;
 }
+
+
+
+
+/* card-Carousel */
+
+.carousel {
+
+  display: flex;
+  
+  overflow-x: scroll;
+  
+  scroll-snap-type: x mandatory;
+  
+  scroll-behavior: smooth;
+  
+  }
+
+  .carousel img {
+
+    width: 100%;
+    
+    scroll-snap-align: start;
+    
+    }
